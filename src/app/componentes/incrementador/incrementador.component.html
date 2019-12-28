@@ -1,0 +1,14 @@
+<p>iincrementador works!</p>
+<div class="input-group ">
+    <p>{{Leyenda}}  ---  {{porcentaje}}</p>
+    <div (click)="cambiarValor(-5)"class="input-group-prepend">
+        <span class="input-group-text"> <i  class="fas fa-low-vision"></i> </span>
+    </div>
+
+    <input  #txtProgress  type="number" class="form-control" name="porcentaje" [(ngModel)]="porcentaje" (ngModelChange)="onChangos($event)"
+        aria-label="Amount (to the nearest dollar)">
+
+    <div (click)="cambiarValor(+5)" class="input-group-append">
+        <span class="input-group-text"> <i class="fa fa-plus"></i> </span>
+    </div>
+</div>

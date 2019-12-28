@@ -1,1 +1,46 @@
 <p>graficas1 works!</p>
+<div class="row">
+
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <!-- Algun texto -->
+
+                <h2 class="card-title">{{graficos.graficos1.leyenda}} </h2>
+                <app-grafikito   [doughnutChartLabels]='graficos.graficos1.Labels' 
+                [doughnutChartData]='graficos.graficos1.data' 
+                  ></app-grafikito>
+                <!-- desde ng chart 2 -->
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+   
+
+    <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <!-- Algun texto -->
+    
+                    <h2 class="card-title">{{graficos.graficos2.leyenda}} </h2>
+                    <app-grafikito   [doughnutChartLabels]='graficos.graficos2.Labels' 
+                    [doughnutChartData]='graficos.graficos2.data'  ></app-grafikito>
+                    
+                        
+                    <!-- desde ng chart 2 -->
+    
+                    
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+</div>

@@ -16,6 +16,9 @@ import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
 import { PagessModule } from './pages/pages.module';
 import { PAGES_RUTITA } from './pages/pages.routes';
+//import { IncrementadorComponent } from './componentes/incrementador/incrementador.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -31,13 +34,16 @@ import { PAGES_RUTITA } from './pages/pages.routes';
     //BreadcrumbsComponent,
     //ProgressComponent,
     //PagesComponent,
-    RegisterComponent
+    RegisterComponent,
+    
+    //IncrementadorComponent
   ],
   imports: [
     BrowserModule,
     APP_RUTITA,
     PagessModule,
-    PAGES_RUTITA
+    PAGES_RUTITA,
+    FormsModule
     
     
   ],

@@ -6,6 +6,11 @@ import { PagesComponent } from './pages.component';
 import { CharedModule } from '../shared/shared.module';
 import { PAGES_RUTITA } from './pages.routes';
 
+import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
+import { IncrementadorComponent } from '../componentes/incrementador/incrementador.component';
+import { GrafikitoComponent } from '../componentes/grafikito/grafikito.component';
+
 
 
 
@@ -15,6 +20,8 @@ import { PAGES_RUTITA } from './pages.routes';
         DashboardComponent,
         Graficas1Component,
         ProgressComponent,
+        IncrementadorComponent,
+        GrafikitoComponent
         
     ],
 
@@ -22,12 +29,15 @@ import { PAGES_RUTITA } from './pages.routes';
         DashboardComponent,
         Graficas1Component,
         ProgressComponent,
+        GrafikitoComponent
     
         
     ],
     imports:[
         CharedModule,
-        PAGES_RUTITA
+        PAGES_RUTITA,
+        FormsModule,
+        ChartsModule
     ]
 
 
