@@ -10,9 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import { IncrementadorComponent } from '../componentes/incrementador/incrementador.component';
 import { GrafikitoComponent } from '../componentes/grafikito/grafikito.component';
-
-
-
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations:[
@@ -21,8 +19,8 @@ import { GrafikitoComponent } from '../componentes/grafikito/grafikito.component
         Graficas1Component,
         ProgressComponent,
         IncrementadorComponent,
-        GrafikitoComponent
-        
+        GrafikitoComponent,
+        AccountSettingsComponent
     ],
 
     exports:[ //esto tmb se exportara
@@ -30,20 +28,14 @@ import { GrafikitoComponent } from '../componentes/grafikito/grafikito.component
         Graficas1Component,
         ProgressComponent,
         GrafikitoComponent
-    
-        
     ],
+
     imports:[
         CharedModule,
         PAGES_RUTITA,
         FormsModule,
-        ChartsModule
+        ChartsModule,
     ]
-
-
-
-
-
 })
 
 

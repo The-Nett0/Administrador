@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AsettingsService } from './services/service.indice';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'adminPro';
+
+  constructor( public _ajustes:AsettingsService ){
+
+  }
 }

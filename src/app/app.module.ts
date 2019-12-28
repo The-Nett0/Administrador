@@ -18,9 +18,8 @@ import { PagessModule } from './pages/pages.module';
 import { PAGES_RUTITA } from './pages/pages.routes';
 //import { IncrementadorComponent } from './componentes/incrementador/incrementador.component';
 import { FormsModule } from '@angular/forms';
-
-
-
+import { ServiceModule } from './services/service.module';
+//servicios
 
 @NgModule({
   declarations: [
@@ -43,10 +42,10 @@ import { FormsModule } from '@angular/forms';
     APP_RUTITA,
     PagessModule,
     PAGES_RUTITA,
-    FormsModule
-    
-    
+    FormsModule,
+    ServiceModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
