@@ -14,7 +14,7 @@ export class SidebarService {
         {titulo:'ProgressBArra',url:'/progress'},
         {titulo:'Graficas',url:'/graficas1'},
         {titulo:'Promesas',url:'/promesas'},
-        {titulo:'fcprmeex',url:'/fcrpmix'},
+        {titulo:'fcprmex',url:'/fcrpmex'},
 
        
       ]

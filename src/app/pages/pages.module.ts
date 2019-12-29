@@ -11,6 +11,9 @@ import { ChartsModule } from 'ng2-charts';
 import { IncrementadorComponent } from '../componentes/incrementador/incrementador.component';
 import { GrafikitoComponent } from '../componentes/grafikito/grafikito.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+
+import { FcrpmexComponent } from './fcrpmex/fcrpmex.component';
 
 @NgModule({
     declarations:[
@@ -20,7 +23,10 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         ProgressComponent,
         IncrementadorComponent,
         GrafikitoComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+       
+        FcrpmexComponent
     ],
 
     exports:[ //esto tmb se exportara
