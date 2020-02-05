@@ -6,10 +6,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { FcrpmexComponent } from './fcrpmex/fcrpmex.component';
+import { LoginGuardGuard } from '../services/service.indice';
 
 const PageRuta: Routes = [
     {
         path:'',component:PagesComponent,
+        canActivate:[LoginGuardGuard],
         children:[
             {path:'dashboard',component:DashboardComponent,data:{ titulo:'dasbarcito'  }  },
             {path:'progress',component:ProgressComponent ,data:{ titulo:'progresito'  } },

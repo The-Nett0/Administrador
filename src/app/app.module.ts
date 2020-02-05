@@ -19,6 +19,9 @@ import { PAGES_RUTITA } from './pages/pages.routes';
 //import { IncrementadorComponent } from './componentes/incrementador/incrementador.component';
 import { FormsModule } from '@angular/forms';
 import { ServiceModule } from './services/service.module';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { HttpClientModule } from '@angular/common/http';
 //servicios
 
 @NgModule({
@@ -43,7 +46,9 @@ import { ServiceModule } from './services/service.module';
     PagessModule,
     PAGES_RUTITA,
     FormsModule,
-    ServiceModule
+    ServiceModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   
   providers: [],

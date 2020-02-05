@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AsettingsService,SharedService,SidebarService } from './service.indice'
+import { AsettingsService,SharedService,SidebarService,UsuarioService } from './service.indice'
+import { LoginGuardGuard } from './guards/login-guard.guard';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { AsettingsService,SharedService,SidebarService } from './service.indice'
 providers:[
   AsettingsService,
   SharedService,
-  SidebarService
+  SidebarService,
+  UsuarioService,
+  LoginGuardGuard
 
 ],
 
